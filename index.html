@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia da Tailândia | Luís e Margarida</title>
+<style>
+:root{
+  --bg:#f6f3ec; --card:#ffffff; --ink:#1f2a2e; --mute:#5e6b70; --line:#e3ddd0;
+  --sea:#0e7c86; --sea-d:#0a5c64; --sand:#e9dcc3; --coral:#e2603f; --ok:#2e8b57; --warn:#c98a10;
+  --madrid:#b5532f; --phuket:#7a4fa0; --kradan:#0e7c86; --lipe:#1f77b4; --phiphi:#d9822b; --hk:#555;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--sea-d)}
+header.hero{background:linear-gradient(135deg,#0a5c64,#0e7c86 55%,#2aa6a0);color:#fff;padding:42px 20px 30px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.hero .wrap{padding:0}
+.hero h1{margin:0 0 6px;font-size:2rem;letter-spacing:-.02em}
+.hero p{margin:0;opacity:.92}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{background:rgba(255,255,255,.18);border-radius:99px;padding:5px 12px;font-size:.85rem}
+nav.top{position:sticky;top:0;z-index:20;background:rgba(246,243,236,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;overflow-x:auto;padding:8px 16px;scrollbar-width:none}
+nav.top a{flex:0 0 auto;text-decoration:none;color:var(--ink);font-size:.85rem;padding:6px 11px;border-radius:99px;background:#fff;border:1px solid var(--line)}
+section{padding:28px 0 6px}
+h2{font-size:1.45rem;margin:0 0 14px;letter-spacing:-.01em}
+h3{margin:0 0 4px;font-size:1.08rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;margin:0 0 14px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+.sub{color:var(--mute);font-size:.9rem;margin:0 0 8px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:2px 8px;border-radius:6px;margin-right:6px;vertical-align:middle}
+.paid{background:#e1f3e8;color:#1d6a41}
+.todo{background:#fdecd0;color:#8a5a00}
+.open{background:#fbe0d9;color:#a23a1f}
+.info{background:#e3eef7;color:#1d5a8a}
+.day{border-left:6px solid var(--c,var(--sea))}
+.dayhead{display:flex;align-items:center;gap:14px;margin:0 0 10px}
+.date{background:var(--c,var(--sea));color:#fff;border-radius:12px;padding:6px 10px;text-align:center;min-width:56px;line-height:1.1}
+.date b{display:block;font-size:1.5rem}
+.date span{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.dayhead h3{font-size:1.15rem}
+.dayhead p{margin:0;color:var(--mute);font-size:.88rem}
+dl.kv{display:grid;grid-template-columns:110px 1fr;gap:4px 12px;margin:8px 0 0;font-size:.93rem}
+dl.kv dt{color:var(--mute)}
+dl.kv dd{margin:0}
+ul{margin:6px 0 6px;padding-left:20px}
+li{margin:3px 0}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+.tip{background:#fff7e6;border:1px solid #f0dcaa;border-radius:12px;padding:10px 14px;margin:10px 0;font-size:.93rem}
+.warn{background:#fdeee9;border:1px solid #f1c5b8;border-radius:12px;padding:10px 14px;margin:10px 0;font-size:.93rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.grid2{grid-template-columns:1fr}dl.kv{grid-template-columns:92px 1fr}.hero h1{font-size:1.65rem}}
+.sos{display:flex;gap:10px;flex-wrap:wrap}
+.sos div{flex:1 1 150px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:center}
+.sos b{display:block;font-size:1.5rem;color:var(--coral)}
+footer{padding:30px 0 50px;color:var(--mute);font-size:.85rem;text-align:center}
+
+nav.top .row{display:flex;gap:6px;overflow-x:auto;padding:7px 16px;scrollbar-width:none}
+nav.top .row.days a{background:#fff;border-left:4px solid var(--c);font-weight:600}
+nav.top .row.days a small{display:block;font-weight:400;color:var(--mute);font-size:.68rem;line-height:1}
+nav.top .row.secs a{background:transparent;border:0;color:var(--mute);padding:3px 8px;font-size:.78rem}
+.card.day{scroll-margin-top:118px}
+section{scroll-margin-top:118px}
+.hotel{background:#eef6f6;border:1px solid #cfe3e3;border-radius:10px;padding:8px 12px;margin:0 0 10px;font-size:.92rem;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.hotel .hl{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--sea-d);font-weight:700}
+.hotel .hs{color:var(--mute);font-size:.8rem}
+.hotel a.call{font-weight:700}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Tailândia 2026</h1>
+    <p>Guia da lua de mel do Luís e da Margarida</p>
+    <div class="pills">
+      <span class="pill">24 Nov a 9 Dez</span>
+      <span class="pill">Phuket, Koh Kradan, Koh Lipe, Koh Phi Phi</span>
+      <span class="pill">Só bagagem de cabine</span>
+    </div>
+  </div>
+</header>
+
+<nav class="top">
+  <div class="row days"><a href="#d24" style="--c:var(--madrid)">24 Nov<small>Madrid</small></a><a href="#d25" style="--c:var(--hk)">25 Nov<small>Voo</small></a><a href="#d26" style="--c:var(--phuket)">26 Nov<small>Phuket</small></a><a href="#d27" style="--c:var(--kradan)">27 Nov<small>Kradan</small></a><a href="#d28" style="--c:var(--kradan)">28 Nov<small>Kradan</small></a><a href="#d29" style="--c:var(--kradan)">29 Nov<small>Kradan</small></a><a href="#d30" style="--c:var(--lipe)">30 Nov<small>Lipe</small></a><a href="#d1" style="--c:var(--lipe)">1 Dez<small>Lipe</small></a><a href="#d2" style="--c:var(--lipe)">2 Dez<small>Lipe</small></a><a href="#d3" style="--c:var(--lipe)">3 Dez<small>Lipe</small></a><a href="#d4" style="--c:var(--phiphi)">4 Dez<small>Phi Phi</small></a><a href="#d5" style="--c:var(--phiphi)">5 Dez<small>Phi Phi</small></a><a href="#d6" style="--c:var(--phiphi)">6 Dez<small>Phi Phi</small></a><a href="#d7" style="--c:var(--phuket)">7 Dez<small>Phuket</small></a><a href="#d8" style="--c:var(--hk)">8 Dez<small>Regresso</small></a></div>
+  <div class="row secs">
+    <a href="#resumo">Resumo</a><a href="#phuket">Phuket</a><a href="#pagamentos">Pagamentos</a><a href="#transportes">Transportes</a><a href="#comer">Comer e ver</a><a href="#praticos">Práticos</a><a href="#seguro">Seguro</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="resumo">
+  <h2>Resumo</h2>
+  <div class="card">
+    <table>
+      <tr><th>Datas</th><th>Onde</th><th>Estado</th></tr>
+      <tr><td>24 a 25 Nov</td><td>Madrid, Hostelfly Airport</td><td><span class="tag todo">Cobra a 19 Nov</span></td></tr>
+      <tr><td>26 a 27 Nov</td><td>Phuket Old Town, Shunli Hotel</td><td><span class="tag todo">Paga no local</span></td></tr>
+      <tr><td>27 a 30 Nov</td><td>Koh Kradan, Kradan Mali</td><td><span class="tag todo">Saldo no check-in</span></td></tr>
+      <tr><td>30 Nov a 4 Dez</td><td>Koh Lipe, Castaway Resort</td><td><span class="tag paid">Pago</span></td></tr>
+      <tr><td>4 a 7 Dez</td><td>Koh Phi Phi, P.P. Casita</td><td><span class="tag todo">Cobra a 25 Nov</span></td></tr>
+      <tr><td>7 a 8 Dez</td><td>Phuket, The Luna</td><td><span class="tag todo">Paga no local</span></td></tr>
+    </table>
+  </div>
+  <div class="warn"><b>Por marcar:</b> barcos Koh Kradan para Koh Lipe (30 Nov), Koh Lipe para Koh Phi Phi (4 Dez) e Koh Phi Phi para Phuket (7 Dez).</div>
+</section>
+
+<section id="dias">
+  <h2>Dia a dia</h2>
+
+  <div class="card day" style="--c:var(--madrid)" id="d24">
+    <div class="dayhead"><div class="date"><b>24</b><span>Nov</span></div><div><h3>Porto para Madrid</h3><p>Terça-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Hostelfly Madrid Airport</b> <a class="call" href="tel:+34910550525">+34 910 55 05 25</a></div>
+    <ul>
+      <li>Voo Iberia IB0550: Porto 20:40, Madrid 23:00 <span class="tag paid">Pago</span></li>
+    </ul>
+    <h3 style="margin-top:10px">Hostelfly Madrid Airport</h3>
+    <p class="sub">11 Calle de la Caldera, Barajas, 28042 Madrid</p>
+    <dl class="kv">
+      <dt>Noite</dt><dd>24 para 25 Nov, 2 camas num dormitório de 10</dd>
+      <dt>Preço</dt><dd>52,20 €, cobrado no cartão a 19 Nov</dd>
+      <dt>Check-in/out</dt><dd>A partir das 14:00 / até às 11:00</dd>
+      <dt>Cancelar</dt><dd>Grátis até 21 Nov</dd>
+      <dt>Telefone</dt><dd><a href="tel:+34910550525">+34 910 55 05 25</a></dd>
+    </dl>
+  </div>
+
+  <div class="card day" style="--c:var(--hk)" id="d25">
+    <div class="dayhead"><div class="date"><b>25</b><span>Nov</span></div><div><h3>Madrid para Hong Kong</h3><p>Quarta-feira, voo noturno</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Sem hotel: noite no avião</b></div>
+    <ul>
+      <li>CX 372, Madrid (T4S) 11:20, Hong Kong 06:50 de dia 26 (12h30, A350)</li>
+      <li>Cathay Pacific, económica <span class="tag paid">Pago</span></li>
+    </ul>
+  </div>
+
+  <div class="card day" style="--c:var(--phuket)" id="d26">
+    <div class="dayhead"><div class="date"><b>26</b><span>Nov</span></div><div><h3>Chegada a Phuket</h3><p>Quinta-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Shunli Hotel, Phuket Old Town</b> <a class="call" href="tel:+66896817557">+66 89 681 7557</a></div>
+    <ul>
+      <li>CX 787, Hong Kong 08:25, Phuket 11:20 (escala de 1h35 em Hong Kong) <span class="tag paid">Pago</span></li>
+      <li>Almoço pedido no Ma Doo Bua às 12:30 <span class="tag open">Sem resposta ainda</span></li>
+      <li>Fim do dia em Phuket Old Town</li>
+    </ul>
+    <h3 style="margin-top:10px">Shunli Hotel (SHA Extra Plus)</h3>
+    <p class="sub">56 Krabi Road, Phuket Old Town</p>
+    <dl class="kv">
+      <dt>Noite</dt><dd>26 para 27 Nov, quarto duplo/twin, sem pequeno-almoço</dd>
+      <dt>Preço</dt><dd>cerca de 37 €, paga no local (só bloqueiam o valor no cartão)</dd>
+      <dt>Cancelar</dt><dd>Grátis até 24 Nov às 23:59 (hora da Tailândia)</dd>
+    </dl>
+    <div class="tip"><b>Perto do hotel:</b> 7-Eleven da Bangkok Road a 5 a 7 minutos a pé. Jui Tui Shrine a cerca de 4 minutos.</div>
+    <h3 style="margin-top:12px">Tarde e noite a pé</h3>
+    <p class="sub">Tudo a poucos minutos do hotel (só o The Fool fica a cerca de 15). Ordem sugerida pelos horários de fecho de quinta-feira.</p>
+    <table>
+      <tr><td><b>Até 17:00</b></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Phuket+Thai+Hua+Museum" target="_blank" rel="noopener">Phuket Thai Hua Museum</a>, Krabi Road 28, ao lado do hotel. Entrada à volta de 200 THB, cerca de 1 hora.</td></tr>
+      <tr><td><b>Até 18:00</b></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Soi+Romanee+Phuket" target="_blank" rel="noopener">Soi Romanee</a>, a rua das casas coloridas. A <a href="https://www.google.com/maps/search/?api=1&amp;query=Torry's+Ice+Cream+Phuket" target="_blank" rel="noopener">Torry's Ice Cream</a> fica no nº 16, num casarão restaurado, e fecha às 18:00.</td></tr>
+      <tr><td><b>Fim da tarde</b></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Thalang+Road+Phuket" target="_blank" rel="noopener">Thalang Road</a>, mansões sino-portuguesas, cafés, galerias e artesanato.</td></tr>
+      <tr><td><b>Pôr do sol</b></td><td>Phang Nga Road: <a href="https://www.google.com/maps/search/?api=1&amp;query=Yellow+Clock+Tower+Phuket" target="_blank" rel="noopener">Clock Tower</a> (amarelo), <a href="https://www.google.com/maps/search/?api=1&amp;query=Old+Standard+Chartered+Bank+Phuket" target="_blank" rel="noopener">Old Standard Chartered Bank</a> (hoje museu peranakan) e <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Memory+at+On+On+Hotel+Phuket" target="_blank" rel="noopener">The Memory at On On Hotel</a> (o hotel do filme "A Praia"). Aqui fica também o santuário <a href="https://www.google.com/maps/search/?api=1&amp;query=San+Chao+Saengtham+Phuket" target="_blank" rel="noopener">San Chao Saengtham</a>, com corredor de murais.</td></tr>
+      <tr><td><b>Até 20:00</b></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=San+Chao+Jui+Tui+Phuket" target="_blank" rel="noopener">San Chao Jui Tui</a>, templo chinês importante, a cerca de 4 minutos do hotel.</td></tr>
+      <tr><td><b>16:00 às 22:30</b></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=Phuket+Indy+Night+Market" target="_blank" rel="noopener">Phuket Indy Night Market</a> (quarta a sexta), ao lado do Limelight. Música ao vivo, boa opção para jantar. Levar dinheiro.</td></tr>
+    </table>
+    <p class="sub" style="margin-top:8px"><b>Bares, depois do jantar:</b> <a href="https://www.google.com/maps/search/?api=1&amp;query=Dibuk+House+Phuket" target="_blank" rel="noopener">Dibuk House</a>, 10 Yaowarat Road (18:30 à 01:00, só dinheiro, fecha às quartas); <a href="https://www.google.com/maps/search/?api=1&amp;query=So+Xorry+Phuket" target="_blank" rel="noopener">So Xorry</a> (19:00 à 01:00, música ao vivo, fecha às terças); <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Fool+Speakeasy+Phuket" target="_blank" rel="noopener">The Fool Speakeasy</a>, 29 Chanacharoen Road (17:00 à meia-noite).</p>
+  </div>
+
+  <div class="card day" style="--c:var(--kradan)" id="d27">
+    <div class="dayhead"><div class="date"><b>27</b><span>Nov</span></div><div><h3>Barco para Koh Kradan</h3><p>Sexta-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Koh Kradan Mali</b> <a class="call" href="tel:+66910577090">+66 91 057 7090</a> <span class="hs">WhatsApp e Line no mesmo número</span></div>
+    <ul>
+      <li>Estar no Rassada Pier às <b>09:15</b>; barco Bundhaya Speed Boat às <b>10:00</b>, chegada prevista 13:40 <span class="tag paid">Pago</span></li>
+      <li>Bilhetes para os dois, 126 € no total; e-ticket com QR code na app</li>
+      <li>Mochila e bagagem de mão até 10 kg</li>
+    </ul>
+    <h3 style="margin-top:10px">Koh Kradan Mali</h3>
+    <p class="sub">221/3 Moo 2, Koh Libong, Kantang, Trang 92110</p>
+    <dl class="kv">
+      <dt>Quarto</dt><dd>Luxury Beachfront Suite, pequeno-almoço incluído, Wi-Fi nos quartos</dd>
+      <dt>Noites</dt><dd>27 a 30 Nov (3 noites), THB 5 000 por noite</dd>
+      <dt>Preço</dt><dd>THB 15 000 (cerca de 398 €)</dd>
+      <dt>Pagamento</dt><dd><span class="tag paid">30% pago</span> Saldo de THB 10 500 paga-se no check-in, com 3% de sobretaxa se for com cartão (cerca de 8 €)</dd>
+      <dt>Contactos</dt><dd><a href="tel:+66910577090">+66 91 057 7090</a> (telefone, WhatsApp, Line), kohkradan@maliresorts.com</dd>
+    </dl>
+    <div class="tip">Levar numerário para o saldo se quiserem evitar a sobretaxa.</div>
+  </div>
+
+  <div class="card day" style="--c:var(--kradan)" id="d28">
+    <div class="dayhead"><div class="date"><b>28</b><span>Nov</span></div><div><h3>Koh Kradan</h3><p>Sábado, dia de praia</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Koh Kradan Mali</b> <a class="call" href="tel:+66910577090">+66 91 057 7090</a> <span class="hs">WhatsApp e Line no mesmo número</span></div>
+    <p class="sub">Dia livre.</p>
+  </div>
+  <div class="card day" style="--c:var(--kradan)" id="d29">
+    <div class="dayhead"><div class="date"><b>29</b><span>Nov</span></div><div><h3>Koh Kradan</h3><p>Domingo, dia de praia</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Koh Kradan Mali</b> <a class="call" href="tel:+66910577090">+66 91 057 7090</a> <span class="hs">WhatsApp e Line no mesmo número</span></div>
+    <p class="sub">Dia livre.</p>
+  </div>
+
+  <div class="card day" style="--c:var(--lipe)" id="d30">
+    <div class="dayhead"><div class="date"><b>30</b><span>Nov</span></div><div><h3>Koh Kradan para Koh Lipe</h3><p>Segunda-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Castaway Resort, Koh Lipe</b> <a class="call" href="tel:+66831387472">+66 83 138 7472</a></div>
+    <ul>
+      <li><span class="tag open">Barco por marcar</span> Bundhaya Speed Boat ou Satun Pakbara</li>
+    </ul>
+    <h3 style="margin-top:10px">Castaway Resort Koh Lipe <span class="tag paid">Pago</span></h3>
+    <p class="sub">1065 Moo 2 PakNam, Langu, Ko Lipe 91110</p>
+    <dl class="kv">
+      <dt>Noites</dt><dd>30 Nov a 4 Dez (4 noites)</dd>
+      <dt>Quarto</dt><dd>Bungalow Breezy com vista jardim, cama de casal, pequeno-almoço incluído</dd>
+      <dt>Preço</dt><dd>446 € (THB 16 848), sem cancelamento nem alteração de datas</dd>
+      <dt>Check-in/out</dt><dd>15:00 às 19:00 / 07:00 às 10:30</dd>
+      <dt>Telefone</dt><dd><a href="tel:+66831387472">+66 83 138 7472</a></dd>
+      <dt>Extras</dt><dd>Wi-Fi grátis nas áreas comuns, sem estacionamento</dd>
+    </dl>
+    <div class="tip">No check-in pedem documento com fotografia e cartão de crédito. O check-in só abre às 15:00, por isso a chegada de manhã é para deixar as mochilas e ir à praia.</div>
+  </div>
+
+  <div class="card day" style="--c:var(--lipe)" id="d1">
+    <div class="dayhead"><div class="date"><b>1</b><span>Dez</span></div><div><h3>Koh Lipe</h3><p>Terça-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Castaway Resort, Koh Lipe</b> <a class="call" href="tel:+66831387472">+66 83 138 7472</a></div>
+    <ul><li>Symbolic Cafe: beach club, basta consumir qualquer coisa para terem cadeiras e guarda-sol (307/13 Koh Lipe). <a href="https://maps.app.goo.gl/v1mgTtCRExNfHAqUA?g_st=iw" target="_blank" rel="noopener">Abrir no Google Maps</a></li></ul>
+  </div>
+  <div class="card day" style="--c:var(--lipe)" id="d2">
+    <div class="dayhead"><div class="date"><b>2</b><span>Dez</span></div><div><h3>Koh Lipe</h3><p>Quarta-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Castaway Resort, Koh Lipe</b> <a class="call" href="tel:+66831387472">+66 83 138 7472</a></div>
+    <p class="sub">Dia livre.</p>
+  </div>
+  <div class="card day" style="--c:var(--lipe)" id="d3">
+    <div class="dayhead"><div class="date"><b>3</b><span>Dez</span></div><div><h3>Koh Lipe</h3><p>Quinta-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Castaway Resort, Koh Lipe</b> <a class="call" href="tel:+66831387472">+66 83 138 7472</a></div>
+    <p class="sub">Dia livre. Último dia de cancelamento grátis do Luna.</p>
+  </div>
+
+  <div class="card day" style="--c:var(--phiphi)" id="d4">
+    <div class="dayhead"><div class="date"><b>4</b><span>Dez</span></div><div><h3>Koh Lipe para Koh Phi Phi</h3><p>Sexta-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>P.P. Casita, Koh Phi Phi</b> <a class="call" href="tel:+6675601023">+66 75 601 023</a></div>
+    <ul><li><span class="tag open">Barco por marcar</span> Check-out do Castaway até às 10:30</li></ul>
+    <h3 style="margin-top:10px">P.P. Casita, Adult Only</h3>
+    <p class="sub">125/89 Moo 7, Ko Phi Phi, Aonang, Muang, Krabi 81210</p>
+    <dl class="kv">
+      <dt>Noites</dt><dd>4 a 7 Dez (3 noites), reserva Agoda</dd>
+      <dt>Preço</dt><dd>120,46 € com impostos e taxas (desconto Agoda de 16,96% incluído)</dd>
+      <dt>Pagamento</dt><dd><span class="tag todo">Cobra a 25 Nov</span> Cancelamento grátis até às 23:59 de 26 Nov (hora de Phi Phi); depois parcialmente reembolsável e, a partir de 4 Dez, sem reembolso</dd>
+      <dt>Check-in/out</dt><dd>14:00 / 11:00</dd>
+      <dt>Telefone</dt><dd><a href="tel:+6675601023">+66 75 601 023</a></dd>
+    </dl>
+  </div>
+
+  <div class="card day" style="--c:var(--phiphi)" id="d5">
+    <div class="dayhead"><div class="date"><b>5</b><span>Dez</span></div><div><h3>Koh Phi Phi</h3><p>Sábado</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>P.P. Casita, Koh Phi Phi</b> <a class="call" href="tel:+6675601023">+66 75 601 023</a></div>
+    <ul>
+      <li>Subida ao viewpoint ao fim da tarde, e jantar no Atom (ver "Comer e ver")</li>
+    </ul>
+  </div>
+
+  <div class="card day" style="--c:var(--phiphi)" id="d6">
+    <div class="dayhead"><div class="date"><b>6</b><span>Dez</span></div><div><h3>Passeio Gold Day Tour</h3><p>Domingo, dia completo</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>P.P. Casita, Koh Phi Phi</b> <a class="call" href="tel:+6675601023">+66 75 601 023</a></div>
+    <ul>
+      <li>Phi Phi Brazuca, para 2 pessoas, em nome da Margarida <span class="tag todo">Pré-reservado, sem pagamento</span></li>
+      <li>A operadora envia email com os detalhes e combina o pagamento. Para pagar antecipadamente: WhatsApp +66 93 431 6182</li>
+    </ul>
+  </div>
+
+  <div class="card day" style="--c:var(--phuket)" id="d7">
+    <div class="dayhead"><div class="date"><b>7</b><span>Dez</span></div><div><h3>Regresso a Phuket</h3><p>Segunda-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>The Luna, Nai Yang Beach</b> <a class="call" href="tel:+6676688190">+66 76 688 190</a></div>
+    <ul><li><span class="tag open">Barco por marcar</span> Check-out do Casita até às 11:00</li></ul>
+    <h3 style="margin-top:10px">The Luna, Nai Yang Beach</h3>
+    <p class="sub">19/9 Moo 1 Soi Naiyang 16, Sa Khu, Thalang, Phuket 83110</p>
+    <dl class="kv">
+      <dt>Noite</dt><dd>7 para 8 Dez, quarto King Deluxe com casa de banho partilhada, pequeno-almoço incluído</dd>
+      <dt>Preço</dt><dd>cerca de 48 € (THB 1 800)</dd>
+      <dt>Cancelar</dt><dd>Grátis até 3 Dez às 23:59; a partir de 4 Dez sem reembolso</dd>
+      <dt>Caução</dt><dd>THB 200 em numerário, devolvida no check-out</dd>
+      <dt>Check-in/out</dt><dd>14:00 às 00:00 / até às 12:00</dd>
+      <dt>Telefone</dt><dd><a href="tel:+6676688190">+66 76 688 190</a></dd>
+    </dl>
+    <div class="tip">Avisar a hora de chegada com antecedência. Aceitam Alipay. No check-in pedem documento com fotografia e cartão de crédito.</div>
+  </div>
+
+  <div class="card day" style="--c:var(--hk)" id="d8">
+    <div class="dayhead"><div class="date"><b>8</b><span>Dez</span></div><div><h3>Voo de regresso</h3><p>Terça-feira</p></div></div>
+    <div class="hotel"><span class="hl">Alojamento</span><b>Sem hotel: noite no aeroporto e no avião</b></div>
+    <ul>
+      <li>CX 770, Phuket (T1) 12:20, Hong Kong 17:05 <span class="tag paid">Pago</span></li>
+      <li>Escala de 7h40 em Hong Kong</li>
+      <li>CX 315, Hong Kong 00:45 de dia 9, Madrid (T4S) 08:35</li>
+    </ul>
+    <div class="tip"><b>Hong Kong:</b> depois da imigração e do regresso ao aeroporto sobram cerca de 3h30 a 4h na cidade. Estar de volta ao aeroporto por volta das 21:30. O Airport Express demora cerca de 24 minutos até Central.<br>
+    <b>Guardar mochilas:</b> Terminal 1, Nível 5, Arrivals Hall A (S.F. Express, aberto das 05:30 à 01:30), 14 HK$ por hora ou 165 HK$ por dia por mala. Na cidade há alternativas a 40 a 60 HK$ por dia (Radical Storage, Bounce).</div>
+  </div>
+</section>
+
+<section id="pagamentos">
+  <h2>Pagamentos e prazos</h2>
+  <div class="card">
+    <table>
+      <tr><th>Data</th><th>O quê</th></tr>
+      <tr><td>19 Nov</td><td>Hostelfly Madrid cobrado no cartão (cancelamento grátis até 21 Nov)</td></tr>
+      <tr><td>24 Nov, 23:59</td><td>Fim do cancelamento grátis do Shunli</td></tr>
+      <tr><td>25 Nov</td><td>Agoda cobra 120,46 € do P.P. Casita</td></tr>
+      <tr><td>26 Nov, 03:00</td><td>Limite para cancelar o barco Phuket para Koh Kradan (reembolso de 122,37 €)</td></tr>
+      <tr><td>26 Nov, 23:59</td><td>Fim do cancelamento grátis do P.P. Casita</td></tr>
+      <tr><td>27 Nov</td><td>Saldo do Koh Kradan Mali (THB 10 500) no check-in</td></tr>
+      <tr><td>3 Dez, 23:59</td><td>Fim do cancelamento grátis do The Luna</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>Já pago</h3>
+    <ul>
+      <li>Voos Cathay Pacific (ida e volta) e Iberia Porto para Madrid</li>
+      <li>Castaway Resort (446 €)</li>
+      <li>30% do Koh Kradan Mali</li>
+      <li>Barco Phuket para Koh Kradan (126 €)</li>
+      <li>Seguro de viagem</li>
+    </ul>
+  </div>
+</section>
+
+<section id="transportes">
+  <h2>Transportes</h2>
+  <div class="card">
+    <h3>Barco Phuket para Koh Kradan, 27 Nov</h3>
+    <dl class="kv">
+      <dt>Companhia</dt><dd>Bundhaya Speed Boat (comprado via 12Go) <span class="tag paid">Pago</span></dd>
+      <dt>Partida</dt><dd>Phuket Rassada Pier, 10:00; cais às 09:15</dd>
+      <dt>Chegada</dt><dd>Koh Kradan Pier, 13:40 previsto</dd>
+      <dt>Bagagem</dt><dd>1 mala e 1 bagagem de mão até 10 kg</dd>
+      <dt>Mau tempo</dt><dd>Reembolso total se o Marine Department proibir a navegação</dd>
+      <dt>Hotline</dt><dd><a href="tel:+66886161416">0886161416</a></dd>
+    </dl>
+  </div>
+  <div class="card">
+    <h3>Regras para todos os barcos</h3>
+    <ul>
+      <li>Nunca usar a Tigerline, por causa dos atrasos</li>
+      <li>Escolher a Bundhaya Speed Boat ou a Satun Pakbara; ambas têm cancelamento gratuito até 24 horas antes</li>
+      <li>Estar sempre no cais 45 minutos antes da partida</li>
+      <li>Partir sempre que possível do Rassada Pier, em Phuket</li>
+    </ul>
+    <div class="warn">Ainda por marcar: Koh Kradan para Koh Lipe (30 Nov), Koh Lipe para Koh Phi Phi (4 Dez) e Koh Phi Phi para Phuket (7 Dez).</div>
+  </div>
+  <div class="card">
+    <h3>Grab em Phuket</h3>
+    <p>O café Ma Doo Bua é ponto de pick-up e drop-off Grab. Código <b>MDB15</b>: 15% de desconto, até 100 THB, sem gasto mínimo.</p>
+  </div>
+</section>
+
+<section id="phuket">
+  <h2>Phuket Old Town</h2>
+  <div class="card">
+    <h3>O que ver</h3>
+    <ul>
+      <li><b>Thalang Road:</b> a rua mais icónica, com mansões coloniais sino-portuguesas, cafés charmosos, galerias de arte e lojas de artesanato. Aos domingos vira o Sunday Walking Street (16h às 22h), que desta vez não apanham.</li>
+      <li><b>Soi Romanee:</b> a principal rua do antigo bairro dos bordéis e casas de jogo; hoje é das mais fotogénicas, com casas coloridas muito bem conservadas</li>
+      <li><b>Phang Nga Road:</b> Clock Tower, Old Standard Chartered Bank (o primeiro banco estrangeiro em Phuket) e The Memory at On On Hotel (onde ficou o DiCaprio em "A Praia")</li>
+      <li><b>San Chao Jui Tui:</b> templo chinês tradicional, um dos mais importantes da ilha, central nos festivais locais</li>
+      <li><b>Phuket Thai Hua Museum:</b> Krabi Road 28, fecha às 17:00</li>
+      <li><b>Torry's Ice Cream:</b> gelataria num casarão histórico, ideal para um doce e fotografias</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Comer</h3>
+    <p class="sub">Sítios assinalados no mapa de Phuket Town que guardámos para o guia.</p>
+    <ul>
+      <li>Ko Benz Pork Soup</li>
+      <li>Khun Jeed Restaurant (Everything Yellow)</li>
+      <li>Yoi Pochana Restaurant</li>
+      <li>Blue Elephant</li>
+      <li>Wagner's</li>
+      <li>Torry's Ice Cream</li>
+      <li>Phuket Indy Market, para jantar com música ao vivo (quarta a sexta)</li>
+      <li>Ma Doo Bua, no almoço de 26 Nov (ver "Comer e ver")</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Bares</h3>
+    <ul>
+      <li><b>Dibuk House:</b> cocktails de autor numa casa histórica, ambiente intimista. 10 Yaowarat Road, só aceita dinheiro, fecha às quartas.</li>
+      <li><b>The Fool Speakeasy:</b> bar escondido inspirado no Tarot, cocktails personalizados. 29 Chanacharoen Road.</li>
+      <li><b>So Xorry:</b> pequeno bar numa casa antiga, com música ao vivo todas as noites</li>
+      <li>Também assinalados no mapa: Debucka, Tantitiam Bar, Sewana Bar, Rasta Cafe/Bar, Rockin Angels Bar, Baan Boran Textiles Bar</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Práticos na cidade</h3>
+    <ul>
+      <li><b>7-Eleven:</b> o da Bangkok Road, a 5 a 7 minutos a pé do hotel</li>
+      <li><b>Mercados:</b> Down Town Market, Phuket Indy Market (quarta a sexta) e Sunday Market na Thalang Road (só domingo)</li>
+      <li><b>Songthaew na Ratsada Road:</b> paragem 2 para Patong, Kata e Karon; paragem 3 para Naihan, Bang Rong Pier e Bus Terminal 2</li>
+      <li><b>Bus Terminal 1:</b> a leste, junto à Montri Road</li>
+      <li><b>Bancos e ATM:</b> Kasikorn, Bangkok Bank, SCB, Krungsri, Tanachart e Standard Chartered, na zona da Phang Nga Road e da Ratsada Road. Há também farmácias na mesma zona.</li>
+      <li><b>Grab:</b> código MDB15, 15% de desconto até 100 THB</li>
+    </ul>
+    <div class="tip"><b>Massagens:</b> ainda não tenho nenhuma escolha para Phuket Town no guia.</div>
+  </div>
+</section>
+
+<section id="comer">
+  <h2>Comer e ver</h2>
+
+  <div class="card">
+    <h3>Almoço no Ma Doo Bua, 26 Nov</h3>
+    <p>Cozinha tailandesa contemporânea, casas tailandesas e lagos de lótus com nenúfares gigantes. Mesa pedida para 2 às 12:30, com vista para o lago <span class="tag open">Sem resposta ainda</span></p>
+    <dl class="kv">
+      <dt>Onde</dt><dd>310/51 Moo 1, Thepkrasattri, Thalang, Phuket 83110, a cerca de 15 minutos do aeroporto</dd>
+      <dt>Horário</dt><dd>Todos os dias, 09:00 às 21:00</dd>
+      <dt>Reservas</dt><dd>booking@madoobua.com, <a href="tel:+66631979244">+66 63 197 9244</a></dd>
+      <dt>Links</dt><dd><a href="https://goo.gl/maps/9TzKakdo77Kv9sY88" target="_blank" rel="noopener">Google Maps</a>, <a href="http://www.madoobua.com" target="_blank" rel="noopener">site</a></dd>
+    </dl>
+  </div>
+
+  <div class="card">
+    <h3>Koh Phi Phi</h3>
+    <ul>
+      <li><b>Viewpoint:</b> 30 THB para os mirantes 1 e 2, mais 20 THB para o 3, pagos em dinheiro na guarita. Subida de cerca de 20 minutos até ao 1 e 40 minutos até ao 2, sempre em degraus. Sair uma hora antes do pôr do sol. Do mirante 2 vê-se Loh Dalum de um lado e o pier de Tonsai do outro.</li>
+      <li><b>Atom Restaurant:</b> comida tailandesa, pratos a partir de 150 THB. Enche cedo, chegar antes das 19:30. Pedir massaman ou curry de peixe. Fica a cerca de 5 minutos a pé da base da escada do viewpoint, por isso serve de jantar depois da subida.</li>
+      <li><b>Comida tailandesa:</b> Garlic 1992, Pa-Noi, Thai Duck (mercado coberto ao lado do Super Duck, a partir de 150 THB)</li>
+      <li><b>Noite:</b> Slinky Bar (espetáculo de fogo), Relax Bar, Moonlight Bar, Boteco Sea View</li>
+      <li><b>Mais restaurantes:</b> Cozinha Brazuca (comida brasileira), Tom Yam Restaurant, Atom (italiano e tailandês)</li>
+      <li><b>Massagens:</b> Anita, Emerald, Baan Sabai, The Pier Massage, Phoenix Thai Massage e Sabaijai Thai Massage. Valores indicativos: 250 a 350 THB por hora em lojas locais, 500 a 900 THB em spas de gama média (Baan Sabai, Emerald), 1 800 THB ou mais em spas de hotel. Perguntar o preço total antes de começar.</li>
+      <li><b>Tradições da ilha:</b> saltar à corda de fogo, subir no touro mecânico, lutar no Reggae Bar, tatuagem com bambu</li>
+      <li><b>Cuidado:</b> os "baldinhos" de bebida das barraquinhas são duvidosos</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Pratos a provar</h3>
+    <p>Pad Kra Pao, Mango Sticky Rice, Tom Yum, Tom Kha Gai, Massaman Curry, Som Tam, Pad Thai, Moo Krata, Hat Yai Fried Chicken, Khao Soi e Thai Tea. Não saltar restaurantes locais e street food.</p>
+    <p class="sub">Khao soi: prato do norte, caril com noodles de ovo e noodles crocantes por cima, normalmente com frango, limão e cebola roxa.</p>
+  </div>
+</section>
+
+<section id="praticos">
+  <h2>Práticos</h2>
+  <div class="card">
+    <ul>
+      <li><b>Registo de entrada (TDAC):</b> obrigatório, gratuito e feito antes da viagem, um por pessoa. <a href="https://tdac.immigration.go.th" target="_blank" rel="noopener">tdac.immigration.go.th</a></li>
+      <li><b>eSIM:</b> Global Yo, ilimitado, 15 dias, 16 USD. 3 GB por dia a velocidade máxima e depois reduzida. Permite hotspot.</li>
+      <li><b>Bagagem:</b> só de cabine. Confirmar que as mochilas cabem no limite da Cathay Pacific.</li>
+      <li><b>Numerário:</b> levar para as cauções (THB 200 no Luna), para o viewpoint e para o saldo do Kradan Mali</li>
+      <li><b>Mota:</b> não vão alugar</li>
+    </ul>
+  </div>
+</section>
+
+<section id="seguro">
+  <h2>Seguro e emergências</h2>
+  <div class="sos">
+    <div><b>1155</b>Polícia de Turismo</div>
+    <div><b>191</b>Polícia</div>
+    <div><b>1669</b>Emergência médica</div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <h3>IATI Mochileiro (seguradora ARAG)</h3>
+    <p class="sub">24 Nov a 9 Dez, Luís e Margarida. A apólice e o certificado estão na app da IATI e no PDF guardado.</p>
+    <dl class="kv">
+      <dt>Assistência 24h</dt><dd><a href="tel:+351218716202">(+351) 218 716 202</a> (chamadas reembolsáveis)</dd>
+      <dt>WhatsApp</dt><dd><a href="https://wa.me/351910183111">(+351) 910 183 111</a>, enviar o telefone para serem contactados</dd>
+      <dt>Email</dt><dd>iatimedicosportugal@arag.pt</dd>
+      <dt>Reembolsos</dt><dd>iatiportugal@arag.pt, no regresso</dd>
+    </dl>
+    <ul>
+      <li>Assistência médica Mundo: 1.500.000 €</li>
+      <li>Roubo e danos de bagagem: 3.000 €; eletrónicos: 1.800 €</li>
+      <li>Atraso da viagem à partida: 350 €; reclamação de voos incluída</li>
+      <li>Busca e salvamento: 15.000 €</li>
+      <li>Repatriação 100%; desportos de aventura incluídos</li>
+    </ul>
+    <div class="tip">A apólice não tem cobertura de cancelamento da viagem. O centro de assistência pede nome, nº de apólice e nº de viagem, que estão no certificado.</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">Guia atualizado a 15 de novembro de 2026. Boa viagem!</div>
+</footer>
+
+</body>
+</html>
